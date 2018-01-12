@@ -1,0 +1,468 @@
+.fixedHack {
+    width: 100%;
+    height: 30%;
+}
+
+
+/*主体*/
+
+.storeDetail {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/*头部*/
+
+.detail_header_content {
+    width: 100%;
+    height: 30%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+}
+
+.detail_header {
+    width: 100%;
+    height: 70%;
+    padding: 0 1rem;
+}
+
+
+/*头部左侧logo*/
+
+.detail_header_left {
+    width: 5rem;
+    height: 100%;
+    margin-right: 1rem;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.detail_header_left img {
+    width: 4rem;
+}
+
+
+/*头部右侧信息*/
+
+.detail_header_right {
+    height: 100%;
+    justify-content: center;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+}
+
+.header_title,
+.header_sign,
+.header_time {
+    width: 100%;
+    font-size: .75rem;
+    margin-bottom: .5rem;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+
+/*药店名*/
+
+.header_title h3 {
+    font-size: 1.1rem;
+}
+
+.header_title span {
+    border: 1px solid #35B17F;
+    padding: .1rem .5rem;
+    color: #35B17F;
+    border-radius: .5rem;
+}
+
+
+/*药店支持服务*/
+
+.header_sign {
+    justify-content: flex-start;
+}
+
+.header_sign>div {
+    margin-right: .2rem;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.header_sign>div img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: .2rem;
+}
+
+
+/*药店营业时间*/
+
+.header_time {
+    margin-bottom: 0;
+}
+
+.header_time span {
+    border: 1px solid #3571B1;
+    padding: 0 .5rem;
+    color: #3571B1;
+    border-radius: .5rem;
+}
+
+
+/*搜索*/
+
+.searchContainer {
+    width: 100%;
+    height: 30%;
+}
+
+.searchMed {
+    width: 90%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: .875rem;
+    margin: 0 5%;
+    border: none;
+    border-radius: 2rem;
+    background: #A6DAF0;
+    text-align: center;
+    color: #fff;
+}
+
+.searchMed::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.searchMed::-webkit-input-placeholder {
+    color: #fff;
+}
+
+
+/*药店列表开始*/
+
+.detail_content {
+    width: 100%;
+    height: 70%;
+}
+
+
+/*药店分类*/
+
+.msg_left {
+    width: 25%;
+    height: 100%;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/*移动端隐藏滚动条Hack*/
+
+.msg_left::-webkit-scrollbar {
+    display: none;
+}
+
+.msg_left li {
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px dashed #A6DAF0;
+    font-size: .875rem;
+}
+
+.msg_left li.choose {
+    background: #eee;
+}
+
+.msg_left li:last-child {
+    margin-bottom: 3rem;
+}
+
+
+/*药品单品*/
+
+.content_msg {
+    width: 75%;
+    height: 100%;
+    float: right;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/*移动端隐藏滚动条Hack*/
+
+.content_msg::-webkit-scrollbar {
+    display: none;
+}
+
+.msg_right {
+    width: 100%;
+    background: #fff;
+}
+
+.msg_right h2 {
+    font-size: .875rem;
+    height: 1rem;
+    line-height: 1rem;
+    padding: 5px 0 5px 10px;
+    margin-bottom: .5rem;
+    border-bottom: 1px dashed #ddd;
+    border-left: 4px solid #A6DAF0;
+    color: #5E5E5E;
+}
+
+
+/*每个药品单品*/
+
+.msg_right li {
+    width: 100%;
+    padding: .5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.msg_right li:last-child {
+    margin-bottom: 3rem;
+}
+
+.msg_right_msg {
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+
+/*左侧logo*/
+
+.content_msg_logo {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 .5rem;
+    border: 1px solid #eee;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.content_msg_logo img {
+    width: 4rem;
+}
+
+
+/*右侧信息*/
+
+.content_msg_msg {
+    font-size: .75rem;
+    justify-content: space-around;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+}
+
+.content_msg_msg h3 {
+    font-size: .875rem;
+}
+
+
+/*价格规格*/
+
+.specContent {
+    width: 100%;
+    margin-top: .2rem;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.specContent .spec {
+    color: #005785;
+}
+
+
+/*地址*/
+
+.address {
+    color: #7D7D7D;
+    margin-top: .2rem;
+}
+
+
+/*标签*/
+
+.sign p {
+    border: 1px solid #519EBF;
+    color: #005785;
+    border-radius: 4px;
+    padding: 0 .2rem;
+    margin: .2rem .5rem 0 0;
+}
+
+
+/*购物车计算*/
+
+.msg_right_computed {
+    width: 100%;
+    margin-top: .5rem;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.msg_right_computed .price {
+    color: #DE1515;
+    font-weight: bold;
+    font-size: .875rem;
+    margin-right: .5rem;
+}
+
+.msg_right_computed>div {
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.msg_right_computed>div p {
+    font-size: .875rem;
+}
+
+.msg_right_computed>div img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 .5rem;
+}
+
+
+/*购物车*/
+
+.shopCar_content {
+    width: 100%;
+    height: 3rem;
+    background: #474546;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    justify-content: space-between;
+}
+
+
+/*提交按钮*/
+
+.shopPayDisBtn {
+    width: 6rem;
+    height: 100%;
+    border: none;
+    background: #898989;
+    color: #fff;
+}
+
+.shopPayBtn {
+    background: #35B17F;
+}
+
+
+/*购物计算*/
+
+.shopCar {
+    color: #fff;
+    position: relative;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+}
+
+.shopCar img {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: -1rem;
+    left: .5rem;
+}
+
+.shopCar>div {
+    font-size: .875rem;
+    margin-left: 4rem;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.shopCar>div .shop_price {
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+
+/*取货方式弹窗*/
+
+.goods_methods {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 60%;
+    height: 10rem;
+    background: #fff;
+    border-radius: 10px;
+    z-index: 111;
+    margin-left: -30%;
+    font-size: .875rem;
+}
+
+.goods_methods h3 {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    background: #A6DAF0;
+    text-align: center;
+    font-size: .875rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.goods_methods>div {
+    width: 100%;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+}
+
+.goods_methods>div>div{
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.goods_methods>div>div input{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+}
+
+.goods_methods button {
+    width: 60%;
+    height: 2rem;
+    border: none;
+    background: #1F72BD;
+    border-radius: 2px;
+    color: #fff;
+}
