@@ -36,5 +36,39 @@ const API = {
     getMedAddress: url + '/mobile/Pharmacy/PickUpDrugInfo/Pid/',
     // 微信支付
     wxPay: url + '/mobile/Pharmacy/PickUpDrugInfo/Pid/',
+    // 订单
+    orderList : url + '/cms/Order/List',
+    // 获取列表页全部列表
+    order: url + '/mobile/Order/OrderListItem/Uid/',
+    // 获取个人信息
+    me: url + '/mobile/User/GetUserInfo/ItemId/',
+    // 删除订单
+    deletelist: url + '/mobile/Order/SoftRemoveItem/ItemId/',
+    // 订单详细列表页
+    orderdetails: url + '/mobile/Order/OrderItem/ItemId/',
+    // 药店接口
+    Pharmacy: url + '/cms/Position/OrderGet/Pid/',
+    // 快递员
+    poster: url + '/cms/Position/expressGet/OpenId/',
+    // 收货地址管理
+    Addressmanagement: url + '/mobile/UserAddress/GetAddressList',
+    // 删除收货地址
+    delAddress: url + '/mobile/UserAddress/SoftRemove',
+    // 设置默认收货地址
+    defAddress: url + '/mobile/UserAddress/ModifyDefaultAddress',
+    // 编辑收货地址详细信息接口
+    editAddress: url + '/mobile/UserAddress/GetAddressInfo',
+    // 修改收货地址的提交接口
+    submitAddress: url + '/mobile/UserAddress/ModifyAddressInfo',
+    // 选择省
+    proSelect: url + '/mobile/Area/Pic_ListItem',
+    // 选择市
+    citySelect: url + '/mobile/Area/Cic_ListItem',
+    // 选择区
+    areaSelect: url + '/mobile/Area/Dic_ListItem',
+    // 新增收货地址
+    addAddress: url + '/mobile/UserAddress/PostAddress',
+    // 取消订单
+    cancellationOrder: url + '/mobile/Order/CancelRemoveItem'
 };
 export default API;

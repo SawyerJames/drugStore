@@ -28,7 +28,7 @@ export default {
                 imgUrlChoose: require('../assets/tabBar/aboutChoose.png'),
                 msg: "购物车"
             }, {
-                path: "center",
+                path: "me",
                 imgUrl: require('../assets/tabBar/center.png'),
                 imgUrlChoose: require('../assets/tabBar/centerChoose.png'),
                 msg: "个人中心"

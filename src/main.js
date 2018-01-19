@@ -5,6 +5,8 @@ import axios from 'axios'
 import Vuex from 'vuex'
 import tools from './extend/tools'
 import api from '@/extend/api'
+import somap from '../static/soMap/somap.js'
+
 import {
     TransferDom,
     Alert,
@@ -55,7 +57,8 @@ Vue.prototype.$store = new Vuex.Store({
     state: {
         // 存储全局变量
         Uid: '',
-        Pid: ''
+        Pid: '',
+        mapsTime: ''
     }
 })
 

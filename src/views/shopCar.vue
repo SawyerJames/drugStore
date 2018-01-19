@@ -1,7 +1,7 @@
 <template>
     <div class="shopCar">
         <!-- 购物车主体，循环 -->
-        <div v-if="shopCar" v-for="(item,index) in shopCar" class="shopCarContent">
+        <router-link tag="div" :to="{'name':'storeDetail',params:{'id': item.Pid}}" v-if="shopCar" v-for="(item,index) in shopCar" class="shopCarContent">
             <!-- 每个店铺头部 -->
             <div class="car_header boxBorder flexRow">
                 <span>{{item.P_name}}</span>
@@ -26,7 +26,7 @@
                 <span class="price">{{item.Count}}</span>
                 <button type="button" class="car_sumPay" @click="pay(index)">去付款</button>
             </div>
-        </div>
+        </router-link>
         <!-- 取货方式 -->
         <div v-if="winMed" class="mask"></div>
         <div v-if="winMed" class="goods_methods flexCol">
@@ -124,7 +124,7 @@ export default {
                     that.shopCar = resData;
                     // 判断购物车是否为空
                     if (resData == '') {
-                       that.carEmpty = true;
+                        that.carEmpty = true;
                     }
                 },
                 function error(err) {

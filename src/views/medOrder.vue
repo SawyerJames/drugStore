@@ -123,7 +123,7 @@ export default {
             if (this.postMsg.Name == '') {
                 this.validate = "您还未填写取药人";
                 var validate = setTimeout(function() {
-                    this.validate = "";
+                    that.validate = "";
                 }, 1000);
             } else {
                 if (this.postMsg.Tel == '') {

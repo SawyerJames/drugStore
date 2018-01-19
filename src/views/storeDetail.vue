@@ -267,6 +267,7 @@ export default {
                 this.$api.shopCarWin,
                 this.UPid,
                 function success(res) {
+                    console.log(res);
                     var resData = res.data.CartInfo;
                     that.winCarList = resData;
                     that.shop_price = resData.Count;

@@ -114,6 +114,7 @@ export default {
                 },
                 function error(err) {
                     that.$vux.loading.show({text:"网络错误"});
+                    return;
                 }
             )
         }

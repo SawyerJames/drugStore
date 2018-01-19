@@ -2,8 +2,6 @@
     <div class="medDetail">
         <!-- 轮播图 -->
         <div class="swiper">
-            <!--             <swiper :list="medDetail.Img" auto style="width:90%; margin:0 auto;" height="10rem" dots-position="right">
-            </swiper> -->
             <img :src="medDetail.Img" style="width:90%; margin:0 auto;" height="10rem">
         </div>
         <!-- 药品信息 -->
